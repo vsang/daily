@@ -1,0 +1,11 @@
+
+uwsgi parameter to add:
+--gevent 800  --gevent-monkey-patch
+
+in the app, it may also need to:
+from gevent import monkey;monkey.patch_all()
+
+
+
+
+After enable gevent loop in uwsgi, it's performance is improved a lot
