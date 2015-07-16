@@ -1,0 +1,11 @@
+
+
+
+apache benchmark:
+GET example:
+ab  -c 100 -n 10000  url
+
+POST example:
+ab  -p a.post -T 'application/json' -H 'Msg:1104016' -H 'uuid:uuid' -H 'V:0' -c 50 -n 20000 http://test2.itf.upm.wasu.tv/p 
+xw@vod-aggregation:~> cat a.post
+{"indentBizId":"HIVODc86b67113e111461967113", "deviceId":"4d260d92ce1dc2b215a4c0f9fd362bab"}
